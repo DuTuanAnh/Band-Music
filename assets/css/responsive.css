@@ -1,0 +1,55 @@
+/* PC */
+@media (max-width: 1024px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+    #header {
+        overflow: hidden;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    /* Ẩn submenu mặc định */
+    #nav .subnav {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    /* Khi submenu có class "show" thì hiển thị */
+    #nav .subnav.show {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+    }
+}
